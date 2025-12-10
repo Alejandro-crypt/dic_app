@@ -15,6 +15,27 @@ const dictionaryData = {
 };
 // ------------------------------ FIN: DATOS DEL DICCIONARIO ----------------------------
 
+// ------------------------------ INICIO: ANIMACIÓN DEL HEADER (para su Commit) ----------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+    const subtitleElement = document.getElementById('header-subtitle');
+    
+    // Función para activar la animación de desvanecimiento (fade-in)
+    const animateHeader = () => {
+        // Simplemente agregamos una clase CSS para disparar la animación
+        subtitleElement.classList.add('is-visible');
+        
+        // Opcional: Cambiar el color del subtítulo después de 3 segundos
+        setTimeout(() => {
+            subtitleElement.style.color = '#388e3c'; // Verde más oscuro
+        }, 3000);
+    };
+
+    // La función se ejecuta 500ms después de que la página carga
+    setTimeout(animateHeader, 500);
+});
+
+// ------------------------------ FIN: ANIMACIÓN DEL HEADER ------------------------------------------------
 
 // ------------------------------ INICIO: LÓGICA DE LA APLICACIÓN ----------------------------
 const form = document.getElementById('search-form');
