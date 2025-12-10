@@ -1,6 +1,6 @@
 /* Estilos Generales y Tipografía */
 :root {
-    --primary-color: #4CAF50; /* Verde minimalista */
+    --primary-color: #4CAF50; 
     --secondary-color: #333;
     --background-color: #f7f9fc;
     --card-background: #ffffff;
@@ -10,137 +10,35 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
-    color: var(--secondary-color);
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Para manejar el header y footer */
+    flex-direction: column; 
     align-items: center;
 }
 
-/* --------------------------------- HEADER (Cabecera) --------------------------------- */
-.main-header {
-    width: 100%;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.main-header h1 {
-    margin: 0;
-    font-weight: 300;
-}
-/* --------------------------------- FIN HEADER --------------------------------- */
-
-
-/* Contenedor principal de la aplicación */
 .container {
-    background-color: var(--card-background);
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
     width: 90%;
     max-width: 700px;
     margin: 40px auto;
-    flex-grow: 1;
+    flex-grow: 1; 
 }
+
+/* --------------------------------- HEADER (Cabecera) --------------------------------- */
+/* (Los estilos específicos del header se pegarán aquí) */
+/* --------------------------------- FIN HEADER --------------------------------- */
+
 
 /* --------------------------------- CONTENIDO PRINCIPAL --------------------------------- */
-
-/* Formulario de Búsqueda */
-#search-form {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-#word-input {
-    flex-grow: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-#word-input:focus {
-    border-color: var(--primary-color);
-    outline: none;
-}
-
-button[type="submit"] {
-    padding: 12px 25px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.1s;
-}
-
-button[type="submit"]:hover {
-    background-color: #43a047; /* Tono más oscuro de verde */
-}
-
-button[type="submit"]:active {
-    transform: scale(0.98);
-}
-
-/* Contenedor de Resultados */
-.result-container {
-    min-height: 120px;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    background-color: #fefefe;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.placeholder-text {
-    color: #999;
-    text-align: center;
-    font-style: italic;
-    margin: 35px 0;
-}
-
-.word-title {
-    color: var(--primary-color);
-    margin-top: 0;
-    font-size: 1.8em;
-    font-weight: 600;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
-}
-
-.definition {
-    line-height: 1.7;
-    font-size: 1.1em;
-    color: var(--secondary-color);
-}
-
-.error-message {
-    color: #e53935; /* Rojo para errores */
-    font-weight: 500;
-    text-align: center;
-    padding: 20px 0;
-}
-
+/* (Los estilos para el formulario y resultados se pegarán aquí) */
 /* --------------------------------- FIN CONTENIDO PRINCIPAL --------------------------------- */
 
 
 /* --------------------------------- FOOTER (Pie de Página) --------------------------------- */
-.main-footer {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    background-color: #e0e0e0;
-    color: #555;
-    font-size: 0.9em;
-    margin-top: auto; /* Empuja el footer hacia abajo */
-    border-top: 1px solid #ccc;
-}
+/* (Los estilos para el footer se pegarán aquí) */
 /* --------------------------------- FIN FOOTER --------------------------------- */
+
+
+/* --- ESTILOS DE LA ANIMACIÓN JS --- */
+/* (Los estilos de la animación se pegarán aquí) */
