@@ -11,3 +11,14 @@ const dictionaryData = {};
 // (El código de las funciones y event listeners se pegará aquí)
 
 // ------------------------------ FIN: LÓGICA DE LA APLICACIÓN ------------------------------------------------
+
+// ------------------------------ INICIO: LÓGICA DEL FOOTER ----------------------------
+// Muestra el año actual en el footer
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+});
+// ------------------------------ FIN: LÓGICA DEL FOOTER ------------------------------------------------
