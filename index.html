@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diccionario Minimalista</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     
     <header class="main-header" id="main-header">
-        <h1>Buscador de Términos</h1>
+        <h1>Buscador de Términos 📖</h1>
         <p class="subtitle" id="header-subtitle">Tu herramienta minimalista para entender conceptos clave.</p>
     </header>
+    
     <div class="container">
-        
+        <form id="search-form" class="search-section">
+            <input 
+            type="text" 
+            id="word-input" 
+            placeholder="Escribe un concepto clave (ej: git, push, rama)..." 
+            required
+            >
+            <button type="submit">Buscar Definición</button>
+        </form>
+
+        <div id="result-container" class="result-container">
+            <p class="placeholder-text">🔍 Utiliza la barra de búsqueda para encontrar definiciones en la base de datos.</p>
+        </div>
     </div>
 
     <footer class="main-footer">
-        
+        <p>Desarrollado con Git. | &copy; <span id="current-year"></span> Diccionario Minimalista.</p>
+        <p class="github-link">Proyecto Open Source disponible en GitHub.</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
